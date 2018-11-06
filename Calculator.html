@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/Assets/Calculator image.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./Assets/stylesheet.css">
+
+</head>
+
+<body>
+    <img class="topImg" src="/Assets/Calculator image.png" img>
+    <div class="menu">
+        <ul>
+            <li><a href="./Degrees.html">Degrees</a></li>
+            <li><a href="./Calculator.html">Calculator</a></li>
+            <li><a href="./About.html">About</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h3 class="title">Calculator</h3>
+    <div class="calcWrapper">
+        <div id="history"><span>Calculations History</span></div>
+
+        <div id="calculator">
+            <input type="text" id="display" value="" placeholder="0" autofocus>
+
+            <div id="row1">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="operate('*')">*</button>
+                <button onclick="operate('-')">-</button>
+                <button id="btnPlus" onclick="operate('+')">+</button>
+            </div>
+            <div id="row2">
+                <button onclick="addDigit(7)">7</button>
+                <button onclick="addDigit(8)">8</button>
+                <button onclick="addDigit(9)">9</button>
+                <button onclick="operate('/')">/</button>
+            </div>
+            <div id="row3">
+                <button onclick="addDigit(4)">4</button>
+                <button onclick="addDigit(5)">5</button>
+                <button onclick="addDigit(6)">6</button>
+            </div>
+            <div id="row4">
+                <button onclick="addDigit(1)">1</button>
+                <button onclick="addDigit(2)">2</button>
+                <button onclick="addDigit(3)">3</button>
+                <button id="btnEquals" onclick="calculate();addToHist()">=</button>
+            </div>
+            <div id="row5">
+                <button id="btnZero" onclick="addDigit(0)">0</button>
+                <button onclick="addDigit('.')">.</button>
+
+
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

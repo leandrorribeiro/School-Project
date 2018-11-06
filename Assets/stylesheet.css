@@ -1,0 +1,202 @@
+#toggleBtn {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:grey;
+    color:black;
+    border-radius:50px;
+    text-align:center;
+    
+}
+
+.topImg {
+    position: absolute;
+    height: 60px;
+    float: left;
+
+}
+.menu {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+
+}
+
+.menu ul li {
+    border: 5px solid red;
+    display: inline-block;
+    height: 50px;
+    width: 25%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    border-top-left-radius:58px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:58px;
+       
+}
+.menu ul li:nth-child(2){
+    border-width: 5px;
+    border-color: darkred;
+    border-style: groove;
+    border-top-left-radius:58px;
+    border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:58px;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: gray;
+}
+
+.text {
+    display: block;
+    position: right;
+}
+table {
+    width: 100%;
+    border: 1px solid black;
+}
+th, td {
+    border: 1px solid black;
+}
+th {
+    background:-webkit-gradient(linear, 62% 67%, 28% 21%, from(#860000), to(#590000));
+    color: silver;
+}
+tr:nth-child(odd), tbody {
+    background-color: silver;
+}
+
+form {
+    height: 60px; 
+    position: fixed; 
+    bottom:50px;
+    width:100%;  
+    opacity: .8;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#date { 
+    height: 22px;
+    border: 1px solid black;  
+}
+#name {
+    height: 20px;  
+    border-width: 1px 0px;
+    border-color: black;
+    border-style: solid;
+}
+#institution {
+    height: 30px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid; 
+}
+
+#add{
+    height: 20px; 
+    border-radius: 8px;
+}
+#cancel{
+    height: 20px;
+    border-radius: 8px;    
+}
+.aboutContent{
+    display: flex;
+}
+.aboutContent img{
+    position: sticky;
+    top: 100px;
+}
+
+.contacts {
+    display: flex;
+    white-space: pre-wrap;
+    align-content: center;
+}
+.contacts a {
+    background-color: rgba(215, 22, 50, 0.9);
+    color: darkgrey;
+    box-shadow: 3px 3px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+a:nth-child(3){
+    margin-left: auto;
+}
+/* css calcluadora */
+#calculator {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#display {
+    text-align: right;
+    width: 128px;
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+button {
+    height: 25px;
+    width: 30px;
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid grey;    
+}
+#row1 {
+    margin-top: 3px;
+}
+
+button:hover {
+    background-color: coral;
+}
+
+#btnZero {
+    width: 64px;
+}
+
+li {
+    list-style-type: none;
+}
+.calcWrapper{
+    display: flex;
+    justify-content: center;
+}
+#history{
+    border: 1px solid black;
+    width: 150px;
+    overflow-y: auto;
+    max-height: 150px;
+}

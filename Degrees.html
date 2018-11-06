@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Degrees</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/Assets/table img.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./Assets/stylesheet.css">
+</head>
+
+<body>
+    <img class="topImg" src="/Assets/table img.jpg" img>
+    <div class="menu">
+        <ul>
+            <li><a href="./Degrees.html">Degrees</a></li>
+            <li><a href="./Calculator.html">Calculator</a></li>
+            <li><a href="./About.html">About</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="title">
+        <h3>Degrees</h3>
+    </div>
+
+    <div id="table">
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Institution</th>
+            </tr>
+            <tr>
+                <td>2018-11-06</td>
+                <td>Leandro Ribeiro</td>
+                <td>FLAG</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <div id="tabIpt" class="tabInput">
+        <form>
+            <input type="date" name="date" id="date" min="1970-01-01" max="2020-12-31" />
+            <input type="text" name="name" id="name" autocomplete="cc-name" />
+            <textarea name="institution" id="institution"></textarea>
+
+            <input type="button" value="Add" onclick="addRow()" id="add">
+            <input type="button" value="Cancel" onclick="reset()" id="cancel">
+        </form>
+    </div>
+    </div>
+
+    <button id="toggleBtn" onclick="toggle()">+</button>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
